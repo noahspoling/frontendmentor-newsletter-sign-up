@@ -39,8 +39,8 @@ export const form = (state) => html`
             </form>
         </div>
         <div id="formImagePane">
-            <img src="../images/illustration-sign-up-desktop.svg" class="desktop">
-            <img src="../images/illustration-sign-up-mobile.svg" class="mobile">
+            <img src="./images/illustration-sign-up-desktop.svg" class="desktop">
+            <img src="./images/illustration-sign-up-mobile.svg" class="mobile">
         </div>
     </div>
 `

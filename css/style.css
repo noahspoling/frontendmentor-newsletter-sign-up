@@ -33,6 +33,7 @@
     width: 100%;
     justify-self: center;
     letter-spacing: .125rem;
+    padding: .5rem;
 }
 
 label {
