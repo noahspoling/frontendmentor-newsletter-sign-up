@@ -84,7 +84,7 @@ input:invalid {
 
 #infoListItem {
     list-style: none;
-    background: url("../images/icon-list.svg");
+    background: url("../docs/assets/icon-list.svg");
     background-repeat: no-repeat; 
     background-position: left top;
     padding-left: 44px;
