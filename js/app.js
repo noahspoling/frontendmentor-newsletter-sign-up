@@ -5,7 +5,6 @@ import success from './success.js'
 
 function handleBack() {
     state.selectedTab = 0
-    console.log(state.submittedValue)
 }
 
 const submittedView = (state) => html`

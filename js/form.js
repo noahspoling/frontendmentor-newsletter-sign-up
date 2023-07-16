@@ -10,7 +10,7 @@ function handleInput(e) {
 
 function handleSubmit(e, state) {
     e.preventDefault()
-    state.submitValue = formValues.inputEmail
+    state.submittedValue = formValues.inputEmail
     formValues.inputEmail = ''
     state.selectedTab = 1
 }
