@@ -44,7 +44,12 @@ button {
         display: none;
     }
 
-    
+    /* SUCCESS WINDOW */
+    #submitWindow {
+        width: 100%;
+
+        background-color: var(--white);
+    }
     
     
 }
@@ -61,15 +66,15 @@ button {
         box-sizing: border-box;
     }
     #app {
-        min-width: 60%;
-        max-width: 80%;
-        margin: auto;
         min-height: 50%;
         border-radius: 25px; 
         padding: 1rem;
         
     }
     #formOuterWindow {
+        min-width: 60%;
+        max-width: 80%;
+        margin: auto;
         display: flex;
         flex-direction: row;  
         gap: 1rem;
@@ -89,12 +94,29 @@ button {
         height: 100%;
     }
 
-    #formImagePane {
-        flex: 1;
-
-    }
     #formImagePane img {
         width: 100%;
         height: auto;
     }
+
+    /* SUCCESS WINDOW */
+    #submitWindow {
+        width: 300px;
+        height: 300px;
+        padding: 2rem;
+        border-radius: 25px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        background-color: var(--white);
+    }
+    #submitWindow img, h1, p {
+        align-self: flex-start;
+    }
+    #submitWindow button {
+        margin-top: auto;
+    }
+    
 }
