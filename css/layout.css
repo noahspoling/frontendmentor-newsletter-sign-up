@@ -46,11 +46,22 @@ button {
 
     /* SUCCESS WINDOW */
     #submitWindow {
-        width: 100%;
-
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        min-height: 100vh;
         background-color: var(--white);
     }
+
+    #submitWindow h1, p {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
     
+    #submitWindow button {
+        width: 70%;
+        margin: auto;
+    }
     
 }
 
@@ -117,6 +128,10 @@ button {
     }
     #submitWindow button {
         margin-top: auto;
+    }
+
+    #submitWindow p {
+        padding-bottom: 1rem;
     }
     
 }
