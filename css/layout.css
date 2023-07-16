@@ -125,6 +125,7 @@ button {
     }
     #submitWindow img, h1, p {
         align-self: flex-start;
+        padding: .5rem;
     }
     #submitWindow button {
         margin-top: auto;
