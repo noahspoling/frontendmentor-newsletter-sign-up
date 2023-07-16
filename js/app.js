@@ -10,7 +10,7 @@ function handleBack() {
 
 const submittedView = (state) => html`
     <div id="submitWindow">
-        <img src="../docs/assets/icon-success.svg"/>
+        <img src="/newsletter-sign-up/docs/assets/icon-success.svg"/>
         <h1 id="TitleText">Thanks for subscribing!</h1>
         <p>
             A confirmation email has been sent to <span>${state.submittedValue}</span>. 
