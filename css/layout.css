@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#formGroup {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+#formInfoBox {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+button {
+    margin: auto;
+    width: 100%;
+    margin-top: 1rem;
+    padding: .75rem;
+    justify-self: center;
+    border: none;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 375px) {
+    #app {
+        min-height: 100vh;
+    }
+
+    #formOuterWindow {
+        display: flex;
+        flex-direction: column-reverse; 
+        
+    }
+    #formInputPane {
+        margin: 2rem;
+    }
+    #formInfoBox {
+    }
+    .desktop {
+        display: none;
+    }
+
+    
+    
+    
+}
+
+@media only screen and (min-width: 376px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #app {
+        min-width: 60%;
+        max-width: 80%;
+        margin: auto;
+        min-height: 50%;
+        border-radius: 25px; 
+        padding: 1rem;
+        
+    }
+    #formOuterWindow {
+        display: flex;
+        flex-direction: row;  
+        gap: 1rem;
+        padding: 2rem;
+        border-radius: 25px;
+        
+    }
+    
+    .mobile {
+        display: none;
+    }
+
+    #formInputPane {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    #formImagePane {
+        flex: 1;
+
+    }
+    #formImagePane img {
+        width: 100%;
+        height: auto;
+    }
+}

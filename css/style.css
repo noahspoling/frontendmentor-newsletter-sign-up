@@ -1,0 +1,118 @@
+
+:root {
+    --tomato: hsl(4, 100%, 67%);
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+* {
+    font-size: 16px;
+    font-family: 'Roboto';
+    color: var(--dark-slate-grey);
+}
+
+#TitleText {
+    margin-top: 2rem;
+    font-size: 38px;
+    width: 100%;
+    justify-self: center;
+    letter-spacing: .125rem;
+}
+
+label {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 0.25rem;
+}
+#formGroup {
+    position: relative;
+}
+
+.errorMessage {
+    color: red;
+    font-family: 'Roboto';
+    font-size: 12px;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+input:invalid + .errorMessage {
+  }
+
+input {
+    padding: .5rem;
+    border-radius: 5px;
+    
+}
+
+input:focus {
+    outline-color: none;
+    border: none;
+    box-shadow: none;
+}
+
+input:invalid {
+    border: 1px solid var(--tomato);
+    outline-color: var(--tomato);
+    color: var(--tomato);
+    background-color: hsl(4, 100%, 92%);
+}
+
+#infoList {
+}
+
+#infoListItem {
+    list-style: none;
+    background: url("../images/icon-list.svg");
+    background-repeat: no-repeat; 
+    background-position: left top;
+    padding-left: 44px;
+    padding-top: 5px;
+    margin: .5rem;
+}
+
+button {
+    background-color: var(--dark-slate-grey);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+
+button:hover {
+    background: linear-gradient(to bottom right, var(--tomato), #dd6e3a);
+}
+
+body {
+    background-color: var(--charcoal-grey);
+}
+
+#app {
+    background-color: var(--white);
+}
+
+
+#formOuterWindow {
+    background-color: var(--white);
+}
