@@ -5,17 +5,21 @@ import success from './success.js'
 
 function handleBack() {
     state.selectedTab = 0
+    console.log(state.submittedValue)
 }
 
-const submittedView = () => html`
-    <div>
-        <p>Submitted Value: </p>
+const submittedView = (state) => html`
+    <div id="submitWindow">
+        <img src="../images/icon-success.svg"/>
+        <h1 id="TitleText">Thanks for subscribing!</h1>
+        <p>
+            A confirmation email has been sent to <span>${state.submittedValue}</span>. 
+            Please open it and click the button inside to confirm your subscription.
+        </p>
         <button @click="${handleBack}">Go Back</button>
     </div>
     
 `
-
-
 
 export const state = reactive({
     submittedValue: '',
